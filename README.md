@@ -1,4 +1,17 @@
-# haproxy
+## nginx 
+
+docker run -d --name web -p 8080:80 nginx
+
+## mysql
+
+docker run \
+--detach \
+--name=data \
+--env="MYSQL_ROOT_PASSWORD=strongpassword123*" \
+--publish 3336:3306 \
+mysql
+
+## haproxy
 
 apt-get install haproxy -y 
 
